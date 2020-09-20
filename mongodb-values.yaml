@@ -8,8 +8,8 @@ auth:
   existingAdminSecret: mongo-secret
 imagePullSecrets: []
 installImage:
-  repository: bitnami/mongodb
-  tag: latest
+  repository: unguiculus/mongodb-install
+  tag: 0.8
   pullPolicy: Always
 copyConfigImage:
   repository: busybox
@@ -23,8 +23,8 @@ extraVars: {}
 metrics:
   enabled: false
   image:
-    repository: bitnami/mongodb
-    tag: latest
+    repository: ssalaues/mongodb-exporter
+    tag: 0.6.1
     pullPolicy: IfNotPresent
   port: 9216
   path: /metrics
