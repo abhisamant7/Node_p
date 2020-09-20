@@ -8,8 +8,8 @@ auth:
   existingAdminSecret: mongo-secret
 imagePullSecrets: []
 installImage:
-  repository: unguiculus/mongodb-install
-  tag: 0.7
+  repository: bitnami/mongodb
+  tag: latest
   pullPolicy: Always
 copyConfigImage:
   repository: busybox
