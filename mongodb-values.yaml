@@ -4,8 +4,8 @@ replicaSetName: db
 podDisruptionBudget: {}
 auth:
   enabled: true
-  existingKeySecret:
-  existingAdminSecret:
+  existingKeySecret: keyfilesecret
+  existingAdminSecret: mongo-secret
 imagePullSecrets: []
 installImage:
   repository: unguiculus/mongodb-install
